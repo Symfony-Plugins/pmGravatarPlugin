@@ -1,0 +1,38 @@
+pmGravatarPlugin
+================
+
+With this plugin you can use [gravatar](http://gravatar.com) images in your application.
+
+Installation
+------------
+
+  * Install the plugin
+
+        $ ./symfony plugin:install pmGravatarPlugin
+
+  * Clear you cache
+
+        $ symfony cc
+
+Example usage
+-------------
+
+    [php]
+    <?php use_helper('Gravatar') ?>
+
+    <?php echo gravatar('pmacadden@cespi.unlp.edu.ar') ?>
+
+
+Gravatar helper functions
+-------------------------
+
+  * gravatar: draws a gravatar
+  * gravatar_url: returns the gravatar url from a given email. Returns a
+                  default image if email does not have an image
+
+functions options
+-----------------
+
+  * size: a value between 1 and 512
+  * rating: 'g', 'pg', 'r', 'x'
+  * default image: one of gravatar's default images
